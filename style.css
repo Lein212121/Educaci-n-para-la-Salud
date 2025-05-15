@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1ba0cd;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 5%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .Logo {
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+
+header .navbar ul { 
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar ul li {
+    position: relative;
+}
+
+header .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+header .navbar ul li a:hover {
+        background-color: #1ba0cd;
+
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #1ba0cd;
+    display: none;
+    flex-direction: column;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: flex;
+}
+
+.drop {
+    margin-left: 10px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+header label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+.botsin {
+
+
+font-family: Arial 24, Helvetica, sans-serif;
+    font-weight: bold;
+position: absolute;
+left: 1500px;
+margin-top: -730px;
+}
+
+
+.bot3 {
+
+
+font-family: Arial 24, Helvetica, sans-serif;
+    font-weight: bold;
+position: absolute;
+left: 1200px;
+margin-top: -200px;
+color: rgb(0, 0, 0);
+
+
+
+
+padding: 15px 30px;
+ text-align: center;
+    transition: background-color 0.3s ease;
+border: 2px solid rgb(0, 204, 255);
+    background-color: #1ba0cd;
+}
+
+
+.bot2 {
+
+
+font-family: Arial 24, Helvetica, sans-serif;
+    font-weight: bold;
+position: absolute;
+left: 1200px;
+margin-top: -400px;
+color: rgb(0, 0, 0);
+
+
+
+padding: 15px 30px;
+ text-align: center;
+    transition: background-color 0.3s ease;
+border: 2px solid rgb(0, 204, 255);
+    background-color: #1ba0cd;
+}
+
+
+.bot1 {
+
+
+font-family: Arial 24, Helvetica, sans-serif;
+    font-weight: bold;
+position: absolute;
+left: 1200px;
+margin-top: -600px;
+color: rgb(0, 0, 0);
+
+
+padding: 15px 30px;
+ text-align: center;
+    transition: background-color 0.3s ease;
+border: 2px solid rgb(0, 204, 255);
+    background-color: #1ba0cd;
+}
+
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -600px;
+}
+
+.btn, .btnnn, .añañin  {
+    display: block;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 2px solid rgb(0, 204, 255);
+    background-color: #1ba0cd;
+    padding: 15px 30px;
+    margin: 50px;
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+.je{
+
+position: absolute;
+left: 1400px;
+margin-top: -650px;
+height: 200px;
+width: 400px;
+}
+
+
+
+.jee{
+
+position: absolute;
+left: 1400px;
+margin-top: -450px;
+height: 200px;
+width: 400px;
+}
+
+.jeee  {
+
+position: absolute;
+left: 1400px;
+margin-top: -250px;
+height: 220px;
+width: 400px;
+}
+
+
+
+
+
+
+
+
+.ñoñardo { 
+
+
+position: absolute;
+margin-top: 300px;
+width: 40%;
+left: 50px;
+}
+
+.btn:hover, .btnnn:hover, .añañin {
+    
+}
+
+@media(max-width: 991px) {
+    header {
+        padding: 20px;
+    }
+    header label {
+        display: flex;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1ba0cd;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+    }
+    header .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    header .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+}
